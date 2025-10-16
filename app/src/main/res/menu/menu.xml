@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_create_order"
+        android:icon="@drawable/add_ic"
+        android:orderInCategory="1"
+        android:title="@string/create_order"
+        app:showAsAction="ifRoom"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/action_share"
+        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"
+        android:orderInCategory="2"
+        android:title="@string/action_share"
+        app:showAsAction="ifRoom" />
+
+</menu>
