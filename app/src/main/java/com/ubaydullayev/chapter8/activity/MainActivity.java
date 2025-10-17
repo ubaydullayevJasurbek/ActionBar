@@ -1,4 +1,4 @@
-package com.ubaydullayev.chapter8;
+package com.ubaydullayev.chapter8.activity;
 
 
 import android.content.Intent;
@@ -8,9 +8,15 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.ShareActionProvider;
-import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.MenuItemCompat;
+import androidx.viewpager2.widget.ViewPager2;
+
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
+import com.ubaydullayev.chapter8.R;
+import com.ubaydullayev.chapter8.adapter.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        ViewPager2 viewPager2 = findViewById(R.id.viewpagerMain);
+        SectionsPagerAdapter pagerAdapter = new SectionsPagerAdapter(this);
+        viewPager2.setAdapter(pagerAdapter);
+
+        TabLayout tabLayout = findViewById(R.id.tabLayoutMain);
+
+        new TabLayoutMediator(tabLayout, viewPager2, (tab, position) ->
+                tab.setText(pagerAdapter.getPageTitle(position))).attach();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {

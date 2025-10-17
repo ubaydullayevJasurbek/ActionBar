@@ -1,5 +1,36 @@
 <resources>
-    <string name="app_name">Bitz and Pizzas</string>
+    <string name="app_name">Bits and Pizzas</string>
     <string name="create_order">Create Order</string>
     <string name="action_share">Share</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="top_fragment">Top Fragment</string>
+    <string name="image_picture">image_picture</string>
+    <string name="pizza_fragment">Pizza Fragment</string>
+    <string name="pasta_fragment">Pasta Fragment</string>
+    <string name="stores_fragment">Stores Fragment</string>
+
+    <string-array name="pizzas">
+        <item>Diavolo</item>
+        <item>Funghi</item>
+        <item>Cristiano</item>
+    </string-array>
+
+    <string-array name="pasta">
+        <item>Kung fu Panda</item>
+        <item>Madagascar</item>
+        <item>Nemo</item>
+    </string-array>
+
+    <string-array name="anime">
+        <item>Naruto</item>
+        <item>Bleach</item>
+        <item>jujutsu kaiser</item>
+    </string-array>
+
+    <string name="home_tab">Home</string>
+    <string name="pizza_tab">Pizzas</string>
+    <string name="pasta_tab">Pasta</string>
+    <string name="store_tab">Stores</string>
+    <string name="my_restaurant">My Restaurant</string>
 </resources>
